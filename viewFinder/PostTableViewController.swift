@@ -22,25 +22,22 @@ class PostTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 10
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "Yay it worked!"
+        cell.imageView?.image = UIImage(named: "camera_1f4f7")
+        //make sure your string is the name of the image in assets assigned to image view 
+        
+        // configure the cell
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
