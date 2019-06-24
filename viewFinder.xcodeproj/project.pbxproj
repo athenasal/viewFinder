@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		18EB648522C1424F00A61497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB648422C1424F00A61497 /* AppDelegate.swift */; };
-		18EB648722C1424F00A61497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB648622C1424F00A61497 /* ViewController.swift */; };
 		18EB648A22C1424F00A61497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EB648822C1424F00A61497 /* Main.storyboard */; };
 		18EB648D22C1424F00A61497 /* viewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18EB648B22C1424F00A61497 /* viewFinder.xcdatamodeld */; };
 		18EB648F22C1425100A61497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EB648E22C1425100A61497 /* Assets.xcassets */; };
 		18EB649222C1425100A61497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EB649022C1425100A61497 /* LaunchScreen.storyboard */; };
 		18EB649D22C1425100A61497 /* viewFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB649C22C1425100A61497 /* viewFinderTests.swift */; };
 		18EB64A822C1425100A61497 /* viewFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB64A722C1425100A61497 /* viewFinderUITests.swift */; };
+		18EB64B622C14BFF00A61497 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB64B522C14BFF00A61497 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		18EB648122C1424F00A61497 /* viewFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viewFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EB648422C1424F00A61497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18EB648622C1424F00A61497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18EB648922C1424F00A61497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18EB648C22C1424F00A61497 /* viewFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = viewFinder.xcdatamodel; sourceTree = "<group>"; };
 		18EB648E22C1425100A61497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		18EB64A322C1425100A61497 /* viewFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viewFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EB64A722C1425100A61497 /* viewFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewFinderUITests.swift; sourceTree = "<group>"; };
 		18EB64A922C1425100A61497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EB64B522C14BFF00A61497 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				18EB648422C1424F00A61497 /* AppDelegate.swift */,
-				18EB648622C1424F00A61497 /* ViewController.swift */,
 				18EB648822C1424F00A61497 /* Main.storyboard */,
 				18EB648E22C1425100A61497 /* Assets.xcassets */,
 				18EB649022C1425100A61497 /* LaunchScreen.storyboard */,
 				18EB649322C1425100A61497 /* Info.plist */,
 				18EB648B22C1424F00A61497 /* viewFinder.xcdatamodeld */,
+				18EB64B522C14BFF00A61497 /* AddPhotoViewController.swift */,
 			);
 			path = viewFinder;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18EB648722C1424F00A61497 /* ViewController.swift in Sources */,
 				18EB648D22C1424F00A61497 /* viewFinder.xcdatamodeld in Sources */,
+				18EB64B622C14BFF00A61497 /* AddPhotoViewController.swift in Sources */,
 				18EB648522C1424F00A61497 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
