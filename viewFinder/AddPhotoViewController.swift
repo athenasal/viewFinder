@@ -9,7 +9,13 @@
 import UIKit
 
 class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
+    
+    @IBAction func captionText(_ sender: Any) {
+      //is this where the error is at?
+    }
+    
+    
     @IBOutlet weak var imageView: UIImageView!
    
     var imagePicker = UIImagePickerController()
@@ -21,8 +27,20 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     @IBAction func saveTapped(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            
+            photoToSave.caption = captionText.text
+            
+            if let userImage = imageView.image {
+                if let userImageData = userImage.pngData() {
+            }
+        }
+                (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+                navigationController?.popViewController(animated: true)
+        }
     }
-    
     @IBAction func photoLibraryTapped(_ sender: Any) {
         imagePicker.sourceType = .photoLibrary
         

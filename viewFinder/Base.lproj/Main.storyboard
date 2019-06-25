@@ -88,6 +88,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="captionText:" destination="YF1-lh-kZu" eventType="editingDidEnd" id="Vn0-iG-qZZ"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qo-VH-9aQ">
                                 <rect key="frame" x="273" y="501" width="92" height="30"/>
@@ -103,6 +106,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="EVi-zO-tCW"/>
                     <connections>
+                        <outlet property="captionText" destination="5bc-8E-MSc" id="xbp-zX-fbV"/>
                         <outlet property="imageView" destination="ezq-tt-hQ8" id="3fm-Mf-8KI"/>
                     </connections>
                 </viewController>
