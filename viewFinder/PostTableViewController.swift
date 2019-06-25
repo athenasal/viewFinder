@@ -12,6 +12,9 @@ class PostTableViewController: UITableViewController {
 
     var photos : [Photos] = []
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    
 func getPhotos() {
     
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
@@ -24,9 +27,10 @@ func getPhotos() {
     
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        func performSegue() {
+        } //WHERE WE LEFT OFF 
+    }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -46,7 +50,7 @@ func getPhotos() {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
-        let cellPhoto = photos[indexPath.row]
+        let cellPhoto = photos[indexPath.row] 
         
         cell.textLabel?.text = cellPhoto.caption
         

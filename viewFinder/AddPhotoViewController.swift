@@ -11,10 +11,8 @@ import UIKit
 class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
-    @IBAction func captionText(_ sender: Any) {
-      //is this where the error is at?
-    }
     
+    @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var imageView: UIImageView!
    
@@ -31,7 +29,7 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
             
             let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
             
-            photoToSave.caption = captionText.text
+            photoToSave.caption = textField.text
             
             if let userImage = imageView.image {
                 if let userImageData = userImage.pngData() {
