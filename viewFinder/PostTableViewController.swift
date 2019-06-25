@@ -14,6 +14,7 @@ class PostTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
     
 func getPhotos() {
     
@@ -26,17 +27,29 @@ func getPhotos() {
         }
     
     }
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        func performSegue() {
-        } //WHERE WE LEFT OFF 
-    }
+            performSegue(withIdentifier: "moveToDetail", sender: photos[indexPath.row])
+        }
+    
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moveToDetail" {
+            if let photoDetailView = segue.destination as? PhotoDetailViewController {
+                
+                if let photoToSend = sender as? Photos {
+                    photoDetailView.photo = photoToSend
+                }
+                
+            }
+        }
     }
+
+    
 
     // MARK: - Table view data source
     override func viewWillAppear(_ animated: Bool) {
